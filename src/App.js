@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import "./App.css"
 
 function StateHook() {
   const tick = () => {
@@ -17,7 +18,7 @@ function StateHook() {
 
   return (
     <div>
-      <h3>Hiciste <b> {count} </b> Heys</h3>
+      <h3 className = "heys" >Hiciste <b> {count} </b> Heys</h3>
       <button onClick ={()=> setCount (count + 1)}>Sumar</button>
       <button onClick ={()=> setCount (count - 1)}>Restar</button>
       <button onClick ={()=> setCount (0)}>Reiniciar</button>
